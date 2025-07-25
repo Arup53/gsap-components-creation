@@ -19,16 +19,29 @@ const Art = () => {
       },
     });
 
+    // maskTimeline
+    //   .to(".will-fade", { opacity: 0, stagger: 0.2, ease: "power1.inOut" })
+    //   .to(".masked-img", {
+    //     scale: 1.3,
+    //     maskPosition: "center",
+    //     maskSize: "400%",
+    //     duration: 1,
+    //     ease: "power1.inOut ",
+    //   })
+    //   .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" });
+
     maskTimeline
-      .to(".will-fade", { opacity: 0, stagger: 0.2, ease: "power1.inOut" })
-      .to(".masked-img", {
-        scale: 1.3,
-        maskPosition: "center",
-        maskSize: "400%",
+      .to(".container1", {
+        opacity: 0,
         duration: 1,
-        ease: "power1.inOut ",
+        display: "none",
+        ease: "power1.inOut",
       })
-      .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" });
+      .fromTo(
+        ".container2",
+        { opacity: 0, duration: 1, ease: "power1.inOut" },
+        { opacity: 1, duration: 1, ease: "power1.inOut" }
+      );
   });
 
   return (
@@ -36,7 +49,7 @@ const Art = () => {
       <div className="container mx-auto h-full pt-20">
         <h2 className="will-fade">The ART</h2>
 
-        <div className="content">
+        {/* <div className="content">
           <ul className="space-y-4 will-fade">
             {goodLists.map((feature, index) => (
               <li key={index} className="flex items-center gap-2">
@@ -73,6 +86,14 @@ const Art = () => {
               for you.
             </p>
           </div>
+        </div> */}
+
+        <div className="container1 flex-center">
+          <h1 className="text-amber-500">Container-1</h1>
+        </div>
+
+        <div className="container2 flex-center">
+          <h1 className="text-purple-500">Container-2</h1>
         </div>
       </div>
     </div>

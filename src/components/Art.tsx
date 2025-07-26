@@ -19,6 +19,37 @@ const Art = () => {
       },
     });
 
+    const test1Timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".container1",
+        end: "bottom  5%",
+        scrub: true,
+        markers: true,
+      },
+    });
+
+    test1Timeline
+      .to(".para", {
+        y: -400,
+        duration: 1,
+        ease: "power1.inOut",
+      })
+      .to(".container1", {
+        opacity: 0,
+        display: "none",
+        ease: "sine.inOut",
+      })
+      .to(".para2", {
+        y: -400,
+        duration: 1,
+        ease: "power1.inOut",
+      })
+      .to(".container2", {
+        opacity: 0,
+        display: "none",
+        ease: "sine.inOut",
+      });
+
     // maskTimeline
     //   .to(".will-fade", { opacity: 0, stagger: 0.2, ease: "power1.inOut" })
     //   .to(".masked-img", {
@@ -30,18 +61,24 @@ const Art = () => {
     //   })
     //   .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" });
 
-    maskTimeline
-      .to(".container1", {
-        opacity: 0,
-        duration: 1,
-        display: "none",
-        ease: "power1.inOut",
-      })
-      .fromTo(
-        ".container2",
-        { opacity: 0, duration: 1, ease: "power1.inOut" },
-        { opacity: 1, duration: 1, ease: "power1.inOut" }
-      );
+    // maskTimeline
+    //   .to(".container1 p", {
+    //     opacity: 0,
+    //     y: -200,
+    //     duration: 1,
+    //     ease: "power1.inOut",
+    //   })
+    //   .to(".container1 h1", {
+    //     opacity: 0,
+    //     duration: 1,
+    //     display: "none",
+    //     ease: "power1.inOut",
+    //   })
+    //   .fromTo(
+    //     ".container2",
+    //     { opacity: 0, duration: 1, ease: "power1.inOut" },
+    //     { opacity: 1, duration: 1, ease: "power1.inOut" }
+    //   );
   });
 
   return (
@@ -88,13 +125,26 @@ const Art = () => {
           </div>
         </div> */}
 
-        <div className="container1 flex-center">
-          <h1 className="text-amber-500">Container-1</h1>
+        <div className="container1 flex justify-center items-center gap-12">
+          <img
+            className="h1 -translate-y-40 h-[600px] object-contain"
+            src="/img/a1.png"
+            alt=""
+          />
+          <p className="para text-4xl"> koikoi</p>
+        </div>
+        <div className="container2 flex justify-center items-center gap-12">
+          <img
+            className="img2 -translate-y-40 h-[600px] object-contain"
+            src="/img/android2.png"
+            alt=""
+          />
+          <p className="para2 text-4xl"> koikoi</p>
         </div>
 
-        <div className="container2 flex-center">
+        {/* <div className="container2 flex-center">
           <h1 className="text-purple-500">Container-2</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import Cocktails from "./components/Cocktails";
 import About from "./components/About";
 import Art from "./components/Art";
 import Test from "./components/Test";
+import TickerSection from "./components/TickerSection";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -20,6 +21,7 @@ function App() {
       <Cocktails />
       <Art />
       <About />
+      <TickerSection />
     </main>
   );
 }

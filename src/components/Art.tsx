@@ -45,8 +45,6 @@ const Art = () => {
         ease: "power1.inOut",
       })
       .to(".container2", {
-        opacity: 0,
-        display: "none",
         ease: "sine.inOut",
       });
 

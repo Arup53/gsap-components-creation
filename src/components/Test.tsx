@@ -24,6 +24,8 @@ const Test = () => {
       <div className="flex absolute gap-2 top-[20%]  border-amber-300">
         <img
           src="./img/icons8-x-32.svg"
+          width={"24px"}
+          height={"24px"}
           alt=""
           className="invert brightness-0"
         />

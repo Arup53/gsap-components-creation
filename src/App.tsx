@@ -11,13 +11,15 @@ import Test from "./components/Test";
 import TickerSection from "./components/TickerSection";
 import AdSection from "./components/AdSection";
 import SubHero from "./components/SubHero";
+import Navbar2 from "./components/Navbar2";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 function App() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navbar2 />
       <Test />
       {/* <Hero /> */}
       <SubHero />

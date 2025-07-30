@@ -1,10 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { DrawSVGPlugin } from "gsap/all";
+import { ScrollTrigger, DrawSVGPlugin } from "gsap/all";
 
-gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
-gsap.registerPlugin(DrawSVGPlugin);
 const SubHero = () => {
   useGSAP(() => {
     const test1Timeline = gsap.timeline({
@@ -50,7 +49,7 @@ const SubHero = () => {
       { drawSVG: "0%" },
       { drawSVG: "100%", duration: 1, ease: "power1.out" }
     );
-  });
+  }, []);
 
   return (
     <section className="rounded-b-[3.75rem] border border-amber-400">

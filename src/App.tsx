@@ -12,6 +12,7 @@ import TickerSection from "./components/TickerSection";
 import AdSection from "./components/AdSection";
 import SubHero from "./components/SubHero";
 import Navbar2 from "./components/Navbar2";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -27,6 +28,7 @@ function App() {
       <About />
       <TickerSection />
       <AdSection />
+      <Footer />
     </main>
   );
 }

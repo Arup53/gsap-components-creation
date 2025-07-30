@@ -22,7 +22,7 @@ const Art = () => {
     const test1Timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".container1",
-        end: "bottom  5%",
+        end: "center  40%",
         scrub: true,
         markers: true,
       },
@@ -30,7 +30,7 @@ const Art = () => {
 
     test1Timeline
       .to(".para", {
-        y: -400,
+        y: -300,
         duration: 1,
         ease: "power1.inOut",
       })
@@ -40,7 +40,7 @@ const Art = () => {
         ease: "sine.inOut",
       })
       .to(".para2", {
-        y: -400,
+        y: -300,
         duration: 1,
         ease: "power1.inOut",
       })
@@ -129,7 +129,13 @@ const Art = () => {
             src="/img/a1.png"
             alt=""
           />
-          <p className="para text-4xl"> koikoi</p>
+          <p className="para text-4xl max-w-2xl">
+            Set up in seconds. Right on your iPhone. Apple Pay is built into
+            iPhone, Apple Watch, Mac, iPad, and Apple Vision Pro. To get started
+            on iPhone, open the Wallet app and tap the plus symbol. Then add a
+            credit or debit card by tapping the back of your iPhone with your
+            eligible card.
+          </p>
         </div>
         <div className="container2 flex justify-center items-center gap-12">
           <img
@@ -137,7 +143,13 @@ const Art = () => {
             src="/img/android2.png"
             alt=""
           />
-          <p className="para2 text-4xl"> koikoi</p>
+          <p className="para2 text-4xl max-w-2xl">
+            {" "}
+            Pay the way that works for you. Apple Pay gives you flexibility at
+            checkout. When you shop online and in apps with iPhone and iPad, you
+            can pay in full or split your purchases into smaller payments over
+            time through an eligible card or other pay later provider.
+          </p>
         </div>
 
         {/* <div className="container2 flex-center">

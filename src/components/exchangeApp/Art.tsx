@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
-import { featureLists, goodLists } from "../util/constants/constant";
 
 const Art = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -80,9 +79,9 @@ const Art = () => {
   });
 
   return (
-    <div id="art" className="bg-white">
+    <div id="art" className="bg-white border-2 border-red-500">
       <div className="container mx-auto h-full pt-20">
-        <h2 className="will-fade">The ART</h2>
+        <h2 className="will-fade"></h2>
 
         {/* <div className="content">
           <ul className="space-y-4 will-fade">

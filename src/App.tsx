@@ -10,6 +10,7 @@ import About from "./components/exchangeApp/About";
 import TickerSection from "./components/exchangeApp/TickerSection";
 import AdSection from "./components/exchangeApp/AdSection";
 import Footer from "./components/exchangeApp/Footer";
+import { Gradient } from "./components/testComponent/Gradient";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -17,15 +18,16 @@ function App() {
   return (
     <main>
       {/* <Navbar /> */}
-      <Navbar2 />
-      <Test />
+      {/* <Navbar2 />
+      <Test /> */}
       {/* <Hero /> */}
-      <SubHero />
+      {/* <SubHero />
       <Art />
       <About />
       <TickerSection />
       <AdSection />
-      <Footer />
+      <Footer /> */}
+      <Gradient />
     </main>
   );
 }

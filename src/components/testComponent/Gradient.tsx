@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const Gradient = () => {
   return <div className="relative w-full min-h-screen bg-black">
@@ -9,7 +8,7 @@ export const Gradient = () => {
     }}
   />
 
-  <img src="/img/new/1st.webp" alt="" className='absolute top-50 left-50 translate-x-18 w-[1300px]'/>
+  <img src="/img/new/1st.webp" alt="" className='absolute top-50 left-50 translate-x-36 w-[1150px]'/>
   <img src="/img/new/2nd.webp" alt="" className='absolute top-50 left-50 translate-x-18 w-[1300px]'/>
   <img src="/img/new/3rd.webp" alt="" className='absolute top-50 left-50 translate-x-18 w-[1300px]'/>
   

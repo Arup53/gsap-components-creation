@@ -11,6 +11,7 @@ import TickerSection from "./components/exchangeApp/TickerSection";
 import AdSection from "./components/exchangeApp/AdSection";
 import Footer from "./components/exchangeApp/Footer";
 import { Gradient } from "./components/testComponent/Gradient";
+import { Products } from "./components/testComponent/Products";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -27,6 +28,7 @@ function App() {
       <TickerSection />
       <AdSection />
       <Footer /> */}
+      <Products />
       <Gradient />
     </main>
   );

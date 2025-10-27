@@ -48,6 +48,19 @@ body {
     width: fit-content
 }
 
+.product-comparison-block, .products-container, .product-card {
+    background: hsla(0,0%,100%,.02);
+    border: 1px solid #525252;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 1px 0 24px;
+    position: relative;
+    transition: background .3s ease,border .3s ease-out;
+    width: calc(25% - 18px);
+    z-index: 1
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }

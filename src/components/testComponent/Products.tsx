@@ -11,7 +11,7 @@ export const Products = () => {
       </div>
 
       {/* cards */}
-      <div className="row flex gap-4 ">
+      <div className="row flex gap-4 my-8 ">
 
        {productsArray.map(product=><div key={product.id} className="w-80 border border-gray-700/50 rounded-lg overflow-hidden">
       {/* Top section - Image */}

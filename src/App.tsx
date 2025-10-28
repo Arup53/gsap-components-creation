@@ -12,12 +12,13 @@ import AdSection from "./components/exchangeApp/AdSection";
 import Footer from "./components/exchangeApp/Footer";
 import { Gradient } from "./components/testComponent/Gradient";
 import { Products } from "./components/testComponent/Products";
+import WalletMechanism from "./components/testComponent/WalletMechanism";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 function App() {
   return (
-    <main>
+    <main className="space-y-24">
       {/* <Navbar /> */}
       {/* <Navbar2 />
       <Test /> */}
@@ -29,6 +30,7 @@ function App() {
       <AdSection />
       <Footer /> */}
       <Products />
+      <WalletMechanism />
       <Gradient />
     </main>
   );

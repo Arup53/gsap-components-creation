@@ -13,6 +13,7 @@ import Footer from "./components/exchangeApp/Footer";
 import { Gradient } from "./components/testComponent/Gradient";
 import { Products } from "./components/testComponent/Products";
 import WalletMechanism from "./components/testComponent/WalletMechanism";
+import SupportedCoins from "./components/testComponent/SupportedCoins";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -31,6 +32,7 @@ function App() {
       <Footer /> */}
       <Products />
       <WalletMechanism />
+      <SupportedCoins />
       <Gradient />
     </main>
   );

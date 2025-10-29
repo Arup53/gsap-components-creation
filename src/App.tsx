@@ -14,6 +14,7 @@ import { Gradient } from "./components/testComponent/Gradient";
 import { Products } from "./components/testComponent/Products";
 import WalletMechanism from "./components/testComponent/WalletMechanism";
 import SupportedCoins from "./components/testComponent/SupportedCoins";
+import LedgerWalletInfo from "./components/testComponent/LedgerWalletInfo";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -33,6 +34,7 @@ function App() {
       <Products />
       <WalletMechanism />
       <SupportedCoins />
+      <LedgerWalletInfo />
       <Gradient />
     </main>
   );

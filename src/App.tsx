@@ -18,7 +18,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 function App() {
   return (
-    <main className="space-y-24">
+    <main className="space-b-24">
       {/* <Navbar /> */}
       {/* <Navbar2 />
       <Test /> */}

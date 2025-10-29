@@ -3,7 +3,7 @@ const LedgerWalletInfo = () => {
     <div className="py-20">
       <div className="row">
         <div className="row py-8">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between ">
             <div className="space-y-4">
               <h3 className="heading-3">
                 Ledger Wallet™ <br />
@@ -13,22 +13,22 @@ const LedgerWalletInfo = () => {
             </div>
 
             <div className="relative inline-block p-4">
-              <div className="bg-[#4a3a5f] text-white text-xs font-semibold uppercase tracking-wider px-4 py-1">
+              <div className="bg-[#D4A0FF4D] text-white text-xs font-semibold uppercase tracking-wider px-4 py-1">
                 Available on mobile & desktop
               </div>
 
               <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute w-1 h-px bg-purple-400 top-3 left-3"></div>
-                <div className="absolute w-px h-1 bg-purple-400 top-3 left-3"></div>
+                <div className="absolute w-1 h-px bg-[#D4A0FF4D] top-3 left-3"></div>
+                <div className="absolute w-px h-1 bg-[#D4A0FF4D] top-3 left-3"></div>
 
-                <div className="absolute w-1 h-px bg-purple-400 top-3 right-3"></div>
-                <div className="absolute w-px h-1 bg-purple-400 top-3 right-3"></div>
+                <div className="absolute w-1 h-px bg-[#D4A0FF4D] top-3 right-3"></div>
+                <div className="absolute w-px h-1 bg-[#D4A0FF4D] top-3 right-3"></div>
 
-                <div className="absolute w-1 h-px bg-purple-400 bottom-3 left-3"></div>
-                <div className="absolute w-px h-1 bg-purple-400 bottom-3 left-3"></div>
+                <div className="absolute w-1 h-px bg-[#D4A0FF4D] bottom-[107px] left-3"></div>
+                <div className="absolute w-px h-1 bg-[#D4A0FF4D] bottom-[107px] left-3"></div>
 
-                <div className="absolute w-1 h-px bg-purple-400 bottom-3 right-3"></div>
-                <div className="absolute w-px h-1 bg-purple-400 bottom-3 right-3"></div>
+                <div className="absolute w-1 h-px bg-[#D4A0FF4D]  bottom-[107px] right-3"></div>
+                <div className="absolute w-px h-1 bg-[#D4A0FF4D]  bottom-[107px] right-3"></div>
               </div>
             </div>
           </div>

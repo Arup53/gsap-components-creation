@@ -46,9 +46,15 @@ const FAQ = () => {
   const selectedFaq = faqs.find((faq) => faq.id === selectedId);
 
   return (
-    <div className="min-h-screen bg-black py-20">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-center gap-6">
+    <div className=" py-20">
+      <div className="row">
+        <div className="row py-8">
+          <div className="space-y-4">
+            <h3 className="heading-3">FAQ</h3>
+            <p>Find answers to some of the most common questions.</p>
+          </div>
+        </div>
+        <div className=" row flex justify-center gap-6">
           {/* left */}
           <div className="space-y-4">
             {faqs.map((faq) => (

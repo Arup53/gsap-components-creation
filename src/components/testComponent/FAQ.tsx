@@ -55,7 +55,7 @@ const FAQ = () => {
               <div
                 key={faq.id}
                 onClick={() => setSelectedId(faq.id)}
-                className={`relative w-[600px] text-left px-4 py-3 cursor-pointer transition overflow-hidden
+                className={`relative w-[650px] text-left px-4 py-3 cursor-pointer  overflow-hidden
               ${
                 selectedId === faq.id
                   ? "bg-[linear-gradient(90deg,#3A363D_20%,#1F1923_70%,#000_100%)] text-white"

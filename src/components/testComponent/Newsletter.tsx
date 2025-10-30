@@ -15,7 +15,7 @@ const Newsletter = () => {
       }}
     >
       <div className="row">
-        <div className="row flex justify-between items-center px-12">
+        <div className="row flex justify-between px-12">
           <div className="space-y-4 flex flex-col  ">
             <h3 className="heading-3">Stay in touch</h3>
             <p>Announcements can be found in our blog.</p>

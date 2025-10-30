@@ -46,8 +46,14 @@ const FAQ = () => {
   const selectedFaq = faqs.find((faq) => faq.id === selectedId);
 
   return (
-    <div className=" py-20">
-      <div className="row">
+    <div
+      className=" py-20"
+      style={{
+        background:
+          "radial-gradient(48.71% 46.53% at 50% 50%, #45395c 0%, #000 100%)",
+      }}
+    >
+      <div className="row ">
         <div className="row py-8">
           <div className="space-y-4">
             <h3 className="heading-3">FAQ</h3>

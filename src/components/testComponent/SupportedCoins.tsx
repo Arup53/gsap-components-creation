@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 const SupportedCoins = () => {
   return (
     <div className="py-24">
-      \
       <div className="row">
         <div className="row">
           <div className="row flex items-center justify-between">

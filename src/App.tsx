@@ -17,6 +17,7 @@ import SupportedCoins from "./components/testComponent/SupportedCoins";
 import LedgerWalletInfo from "./components/testComponent/LedgerWalletInfo";
 import FAQ from "./components/testComponent/FAQ";
 import Ad from "./components/testComponent/Ad";
+import Newsletter from "./components/testComponent/Newsletter";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -40,6 +41,7 @@ function App() {
       <Gradient />
       <FAQ />
       <Ad />
+      <Newsletter />
     </main>
   );
 }

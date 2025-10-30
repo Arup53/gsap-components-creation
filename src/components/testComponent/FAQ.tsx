@@ -50,7 +50,7 @@ const FAQ = () => {
       className=" py-20"
       style={{
         background:
-          "radial-gradient(48.71% 46.53% at 50% 50%, #45395c 0%, #000 100%)",
+          "radial-gradient(48% 70% at 50% 60%, #33293A 0%, #000 100%)",
       }}
     >
       <div className="row ">

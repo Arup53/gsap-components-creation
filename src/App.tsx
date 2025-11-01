@@ -19,6 +19,7 @@ import FAQ from "./components/testComponent/FAQ";
 import Ad from "./components/testComponent/Ad";
 import Newsletter from "./components/testComponent/Newsletter";
 import Footer from "./components/testComponent/Footer";
+import Hero from "./components/testComponent/Hero";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -35,6 +36,7 @@ function App() {
       <TickerSection />
       <AdSection />
       <Footer /> */}
+      <Hero />
       <Products />
       <WalletMechanism />
       <SupportedCoins />

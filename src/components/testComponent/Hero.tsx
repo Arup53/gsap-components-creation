@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="py-20">
       <div className="row">
-        <div className="row flex items-center  ">
+        <div className="row flex items-center">
           {/* left */}
           <div className="flex flex-col gap-2">
             <div className="relative inline-block p-4 w-fit -left-2">
@@ -41,7 +41,7 @@ const Hero = () => {
 
             <div className="flex items-center gap-2 my-6">
               <div>
-                <button className="flex items-center gap-6 py-4 px-18  text-base rounded-full bg-[#FF5300]">
+                <button className="flex items-center gap-6 py-4 px-12  text-base rounded-full bg-[#FF5300]">
                   <span className="block font-bold">
                     Discover Ledger Wallet
                   </span>

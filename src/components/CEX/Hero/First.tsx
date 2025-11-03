@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import AnimatedCircles from "./AnimatedCircles";
 
 const First = () => {
@@ -5,7 +6,15 @@ const First = () => {
     <div className=" bg-white h-[100vh]">
       <div className="flex flex-col items-center">
         <AnimatedCircles />
-        <div className="styles_hero_circle_platform"></div>
+        <motion.div
+          className="styles_hero_circle_platform"
+          initial={{ scaleX: 0.2 }}
+          animate={{ scaleX: 1 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+        />
       </div>
     </div>
   );

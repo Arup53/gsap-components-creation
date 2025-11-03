@@ -146,7 +146,7 @@ function Circle({ circle, index }) {
 
 export default function AnimatedCircles() {
   return (
-    <div className="w-[80%] mx-auto  py-20">
+    <div className="  py-20">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="985"

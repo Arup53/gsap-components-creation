@@ -70,8 +70,13 @@ function Circle({ circle, index }) {
   return (
     <motion.g
       opacity="1"
+      initial={{ y: 500, x: circle.x }} // start at translateY(0)
+      animate={{ y: circle.y, x: circle.x }} // animate to final x, y
+      transition={{
+        duration: 1.2,
+        ease: "easeOut",
+      }}
       style={{
-        transform: `translateX(${circle.x}px) translateY(${circle.y}px)`,
         transformOrigin: "75px 227.25px",
       }}
       onHoverStart={handleHover}

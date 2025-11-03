@@ -10,16 +10,17 @@ import About from "./components/exchangeApp/About";
 import TickerSection from "./components/exchangeApp/TickerSection";
 import AdSection from "./components/exchangeApp/AdSection";
 
-import { Gradient } from "./components/testComponent/Gradient";
-import { Products } from "./components/testComponent/Products";
-import WalletMechanism from "./components/testComponent/WalletMechanism";
-import SupportedCoins from "./components/testComponent/SupportedCoins";
-import LedgerWalletInfo from "./components/testComponent/LedgerWalletInfo";
-import FAQ from "./components/testComponent/FAQ";
-import Ad from "./components/testComponent/Ad";
-import Newsletter from "./components/testComponent/Newsletter";
-import Footer from "./components/testComponent/Footer";
-import Hero from "./components/testComponent/Hero";
+import { Gradient } from "./components/LedgerSiteComponent/Gradient";
+import { Products } from "./components/LedgerSiteComponent/Products";
+import WalletMechanism from "./components/LedgerSiteComponent/WalletMechanism";
+import SupportedCoins from "./components/LedgerSiteComponent/SupportedCoins";
+import LedgerWalletInfo from "./components/LedgerSiteComponent/LedgerWalletInfo";
+import FAQ from "./components/LedgerSiteComponent/FAQ";
+import Ad from "./components/LedgerSiteComponent/Ad";
+import Newsletter from "./components/LedgerSiteComponent/Newsletter";
+import Footer from "./components/LedgerSiteComponent/Footer";
+import Hero from "./components/LedgerSiteComponent/Hero";
+import First from "./components/CEX/Hero/First";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -36,7 +37,7 @@ function App() {
       <TickerSection />
       <AdSection />
       <Footer /> */}
-      <Hero />
+      {/* <Hero />
       <Products />
       <WalletMechanism />
       <SupportedCoins />
@@ -45,7 +46,8 @@ function App() {
       <FAQ />
       <Ad />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
+      <First />
     </main>
   );
 }

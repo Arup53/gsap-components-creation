@@ -92,6 +92,43 @@ body {
   overflow: hidden;
 }
 
+.styles_line__xHTH_ {
+  width: 100%;
+  max-width: 1082px;
+  height: 4px;
+  border-radius: 2px;
+  animation: styles_illustrationLineInner__dDc98 0.75s both var(--ease-swift)
+    0.25s;
+  background: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0.1),
+      hsla(0, 0%, 100%, 0.1)
+    ),
+    linear-gradient(
+      90deg,
+      #39d1f9 10.43%,
+      #ffb400 27.01%,
+      #00827c 44.64%,
+      #008aff 56.05%,
+      #ff3200 73.58%,
+      #9896ff 90.51%
+    );
+  background: linear-gradient(
+      0deg,
+      color(display-p3 1 1 1/0.1),
+      color(display-p3 1 1 1/0.1)
+    ),
+    linear-gradient(
+      90deg,
+      color(display-p3 0.4196 0.8078 0.9608) 10.43%,
+      color(display-p3 1 0.7216 0) 27.01%,
+      color(display-p3 0.1216 0.502 0.4824) 44.64%,
+      color(display-p3 0.102 0.5333 0.9725) 56.05%,
+      color(display-p3 0.949 0.2863 0) 73.58%,
+      color(display-p3 0.5951 0.587 1) 90.51%
+    );
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }

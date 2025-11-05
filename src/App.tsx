@@ -21,6 +21,7 @@ import Newsletter from "./components/LedgerSiteComponent/Newsletter";
 import Footer from "./components/LedgerSiteComponent/Footer";
 import Hero from "./components/LedgerSiteComponent/Hero";
 import First from "./components/CEX/Hero/First";
+import Middle from "./components/CEX/middle/Middle";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -48,6 +49,7 @@ function App() {
       <Newsletter />
       <Footer /> */}
       <First />
+      <Middle />
     </main>
   );
 }

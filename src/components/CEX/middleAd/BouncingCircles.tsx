@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const circleGroups = [
   { x: 0, y: 237, animateY: 11.3096, duration: 4 },
@@ -32,86 +33,125 @@ const CirclePair = ({ cx, cy, maskPrefix, color1, color2 }) => (
   </>
 );
 
-const AnimatedCircleGroup = ({ group, index, colors }) => (
-  <motion.g
-    animate={{ y: [group.animateY, -group.animateY, group.animateY] }}
-    transition={{
-      duration: group.duration,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-  >
-    <g transform={`translate(${group.x}, ${group.y})`}>
-      <CirclePair
-        cx={223}
-        cy={0}
-        maskPrefix={`m${index}`}
-        color1={colors.color1}
-        color2={colors.color2}
-      />
-    </g>
-    <g transform={`translate(${group.x}, ${group.y - 184})`}>
-      <CirclePair
-        cx={223}
-        cy={0}
-        maskPrefix={`m${index}b`}
-        color1={colors.color1}
-        color2={colors.color2}
-      />
-    </g>
-  </motion.g>
-);
+const AnimatedCircleGroup = ({ group, index, colors, dropCircle }) => {
+  return (
+    <motion.g
+      animate={{ y: [group.animateY, -group.animateY, group.animateY] }}
+      transition={{
+        duration: group.duration,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      {/* Bottom circle */}
+      <motion.g
+        animate={{
+          y: dropCircle ? 600 : 0,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: dropCircle ? "easeIn" : "easeOut",
+        }}
+      >
+        <g transform={`translate(${group.x}, ${group.y})`}>
+          <CirclePair
+            cx={223}
+            cy={0}
+            maskPrefix={`m${index}`}
+            color1={colors.color1}
+            color2={colors.color2}
+          />
+        </g>
+      </motion.g>
+
+      {/* Top circle */}
+      <motion.g
+        animate={{
+          translateY: dropCircle ? 184 : 0,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: dropCircle ? "easeIn" : "easeOut",
+        }}
+      >
+        <g transform={`translate(${group.x}, ${group.y - 184})`}>
+          <CirclePair
+            cx={223}
+            cy={0}
+            maskPrefix={`m${index}b`}
+            color1={colors.color1}
+            color2={colors.color2}
+          />
+        </g>
+      </motion.g>
+    </motion.g>
+  );
+};
 
 export default function BouncingCircles() {
+  const [dropCircle, setDropCircle] = useState(false);
+
+  function handleDropCircle() {
+    setDropCircle(!dropCircle);
+  }
+
   const grayColors = { color1: "#1A88F8", color2: "#48ABFF" };
   const blueColors = { color1: "#6BCEF5", color2: "#B5E7FA" };
 
   return (
-    <svg
-      width="986"
-      height="450"
-      viewBox="0 0 986 450"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-auto"
-    >
-      {/* Background rectangles */}
-      <rect width="986" height="450" fill="#F7F6F6" />
-      <rect width="986" height="225" fill="#FCFCFB" />
+    <>
+      <svg
+        width="986"
+        height="450"
+        viewBox="0 0 986 450"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full h-auto"
+      >
+        {/* Background rectangles */}
+        <rect width="986" height="450" fill="#F7F6F6" />
+        <rect width="986" height="225" fill="#FCFCFB" />
 
-      {/* Gray circles section (bottom half) */}
-      <g clipPath="url(#clip-gray)">
-        {circleGroups.map((group, i) => (
-          <AnimatedCircleGroup
-            key={`gray-${i}`}
-            group={group}
-            index={i + 1}
-            colors={grayColors}
-          />
-        ))}
-      </g>
+        {/* Gray circles section (bottom half) */}
+        <g clipPath="url(#clip-gray)">
+          {circleGroups.map((group, i) => (
+            <AnimatedCircleGroup
+              key={`gray-${i}`}
+              group={group}
+              index={i + 1}
+              colors={grayColors}
+              dropCircle={dropCircle}
+            />
+          ))}
+        </g>
 
-      {/* Light blue circles section (top half) */}
-      <g clipPath="url(#clip-blue)">
-        {circleGroups.map((group, i) => (
-          <AnimatedCircleGroup
-            key={`blue-${i}`}
-            group={group}
-            index={i + 5}
-            colors={blueColors}
-          />
-        ))}
-      </g>
+        {/* Light blue circles section (top half) */}
+        <g clipPath="url(#clip-blue)">
+          {circleGroups.map((group, i) => (
+            <AnimatedCircleGroup
+              key={`blue-${i}`}
+              group={group}
+              index={i + 5}
+              colors={blueColors}
+              dropCircle={dropCircle}
+            />
+          ))}
+        </g>
 
-      {/* Clip paths */}
-      <defs>
-        <clipPath id="clip-blue">
-          <rect width="986" height="225" fill="white" />
-        </clipPath>
-        <clipPath id="clip-gray">
-          <rect width="986" height="225" y="225" fill="white" />
-        </clipPath>
-      </defs>
-    </svg>
+        {/* Clip paths */}
+        <defs>
+          <clipPath id="clip-blue">
+            <rect width="986" height="225" fill="white" />
+          </clipPath>
+          <clipPath id="clip-gray">
+            <rect width="986" height="225" y="225" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      <button onClick={handleDropCircle} className="bg-black text-white p-4">
+        {dropCircle ? "Reset" : "Drop Circle"}
+      </button>
+    </>
   );
 }

@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const circleGroups = [
+interface Circle {
+  x: number;
+  y: number;
+  animateY: number;
+  duration: number;
+}
+
+const circleGroups: Circle[] = [
   { x: 0, y: 237, animateY: 11.3096, duration: 4 },
   { x: 182, y: 201, animateY: 19.6862, duration: 5 },
   { x: 364, y: 237, animateY: 26.3589, duration: 4.5 },

@@ -16,6 +16,19 @@ interface CirclePair {
   color2: string;
 }
 
+interface Colors {
+  color1: string;
+  color2: string;
+}
+
+interface AnimatedCircleGroup {
+  key: string;
+  index: number;
+  group: Circle;
+  colors: Colors;
+  dropCircle: boolean;
+}
+
 const circleGroups: Circle[] = [
   { x: 0, y: 237, animateY: 11.3096, duration: 4 },
   { x: 182, y: 201, animateY: 19.6862, duration: 5 },
@@ -48,7 +61,12 @@ const CirclePair = ({ cx, cy, maskPrefix, color1, color2 }: CirclePair) => (
   </>
 );
 
-const AnimatedCircleGroup = ({ group, index, colors, dropCircle }) => {
+const AnimatedCircleGroup = ({
+  group,
+  index,
+  colors,
+  dropCircle,
+}: AnimatedCircleGroup) => {
   return (
     <motion.g
       animate={{ y: [group.animateY, -group.animateY, group.animateY] }}

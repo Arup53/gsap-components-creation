@@ -1,4 +1,5 @@
 import BouncingCircles from "./BouncingCircles";
+import TabSwitch from "./TabSwitch";
 
 const Middle = () => {
   return (
@@ -13,6 +14,7 @@ const Middle = () => {
         <div className="mt-10">
           <BouncingCircles />
         </div>
+        <TabSwitch />
       </div>
     </div>
   );

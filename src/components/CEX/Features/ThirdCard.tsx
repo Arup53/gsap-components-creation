@@ -23,7 +23,7 @@ export default function ThirdCard() {
         <motion.g
           animate={{ rotate: [0, -30, 30, 0] }}
           transition={{
-            duration: 15,
+            duration: 50,
             repeat: Infinity,
             ease: "easeInOut",
           }}

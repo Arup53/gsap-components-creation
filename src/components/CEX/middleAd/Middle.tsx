@@ -14,7 +14,6 @@ const Middle = () => {
         <div className="mt-10">
           <BouncingCircles />
         </div>
-        <TabSwitch />
       </div>
     </div>
   );

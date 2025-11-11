@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import TabSwitch from "./TabSwitch";
 
 interface Circle {
   x: number;
@@ -132,7 +133,7 @@ export default function BouncingCircles() {
   const blueColors = { color1: "#6BCEF5", color2: "#B5E7FA" };
 
   return (
-    <>
+    <div>
       <svg
         width="986"
         height="450"
@@ -185,6 +186,7 @@ export default function BouncingCircles() {
       <button onClick={handleDropCircle} className="bg-black text-white p-4">
         {dropCircle ? "Reset" : "Drop Circle"}
       </button>
-    </>
+      <TabSwitch />
+    </div>
   );
 }

@@ -1,7 +1,7 @@
-import { easeIn, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useState } from "react";
 
-const TabSwitch = () => {
+const TabSwitch = ({ setAnimateState }) => {
   const [switchTab, setSwitchTab] = useState(false);
 
   const handleSwitch = () => {
@@ -19,6 +19,7 @@ const TabSwitch = () => {
           ease: "easeInOut",
         }}
       >
+        {/* left */}
         <motion.div
           className="border-t-2 flex flex-col gap-3 pt-6  cursor-pointer"
           onClick={handleSwitch}
@@ -38,6 +39,7 @@ const TabSwitch = () => {
             Earn interest by supplying assets to the lending network.
           </motion.p>
         </motion.div>
+        {/* right */}
         <motion.div
           className="border-t-2 flex flex-col gap-3 pt-6 cursor-pointer "
           onClick={handleSwitch}

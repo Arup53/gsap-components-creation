@@ -22,6 +22,7 @@ import Footer from "./components/LedgerSiteComponent/Footer";
 import Hero from "./components/LedgerSiteComponent/Hero";
 import First from "./components/CEX/Hero/First";
 import Middle from "./components/CEX/middleAd/Middle";
+import Features from "./components/CEX/Features/Features";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -50,6 +51,7 @@ function App() {
       <Footer /> */}
       <First />
       <Middle />
+      <Features />
     </main>
   );
 }

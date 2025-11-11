@@ -186,7 +186,7 @@ export default function BouncingCircles() {
       <button onClick={handleDropCircle} className="bg-black text-white p-4">
         {dropCircle ? "Reset" : "Drop Circle"}
       </button>
-      <TabSwitch />
+      <TabSwitch animateState={dropCircle} setAnimateState={setDropCircle} />
     </div>
   );
 }

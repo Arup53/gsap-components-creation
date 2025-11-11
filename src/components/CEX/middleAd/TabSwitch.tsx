@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 
-const TabSwitch = ({ setAnimateState }) => {
+const TabSwitch = ({ animateState, setAnimateState }) => {
   const [switchTab, setSwitchTab] = useState(false);
 
   const handleSwitch = () => {
     setSwitchTab(!switchTab);
+    setAnimateState(!animateState);
   };
   return (
     <div className="mt-3 ">

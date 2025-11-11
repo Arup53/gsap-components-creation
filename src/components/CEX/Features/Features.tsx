@@ -1,5 +1,6 @@
 import FirstCard from "./FirstCard";
 import SecondCard from "./SecondCard";
+import ThirdCard from "./ThirdCard";
 
 const Features = () => {
   return (
@@ -7,6 +8,7 @@ const Features = () => {
       <div className="w-1/2 mx-auto">
         <FirstCard />
         <SecondCard />
+        <ThirdCard />
       </div>
     </div>
   );

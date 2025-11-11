@@ -125,10 +125,6 @@ const AnimatedCircleGroup = ({
 export default function BouncingCircles() {
   const [dropCircle, setDropCircle] = useState(false);
 
-  function handleDropCircle() {
-    setDropCircle(!dropCircle);
-  }
-
   const grayColors = { color1: "#1A88F8", color2: "#48ABFF" };
   const blueColors = { color1: "#6BCEF5", color2: "#B5E7FA" };
 
@@ -183,9 +179,6 @@ export default function BouncingCircles() {
         </defs>
       </svg>
 
-      <button onClick={handleDropCircle} className="bg-black text-white p-4">
-        {dropCircle ? "Reset" : "Drop Circle"}
-      </button>
       <TabSwitch animateState={dropCircle} setAnimateState={setDropCircle} />
     </div>
   );

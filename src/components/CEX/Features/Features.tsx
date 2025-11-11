@@ -1,4 +1,5 @@
 import FirstCard from "./FirstCard";
+import FourthCard from "./FourthCard";
 import SecondCard from "./SecondCard";
 import ThirdCard from "./ThirdCard";
 
@@ -9,6 +10,7 @@ const Features = () => {
         <FirstCard />
         <SecondCard />
         <ThirdCard />
+        <FourthCard />
       </div>
     </div>
   );

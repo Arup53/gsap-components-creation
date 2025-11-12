@@ -7,19 +7,30 @@ import Card from "./Card";
 const LastAd = () => {
   return (
     <div className="bg-white py-20">
-      <div className="w-1/2 mx-auto grid grid-cols-2 gap-6">
+      <div className="w-1/2 mx-auto grid grid-cols-2 gap-12">
         {/* 1st row */}
-        <Card content={"koimoi1st"}>
+        <Card title={"Earn"} content={"Earn interest lending out assets."}>
           <FirstAnimation />
         </Card>
-        <Card content={"koimoi1st"}>
+        <Card
+          title={"Swap"}
+          content={"Swap assets, even those borrowed or supplied."}
+          move={"10px"}
+        >
           <SecondAnimation />
         </Card>
         {/* 2nd row */}
-        <Card content={"koimoi1st"}>
+        <Card
+          title={"Save"}
+          content={"Save and earn yield with Aave's native stablecoin GHO."}
+        >
           <ThirdAnimation />
         </Card>
-        <Card content={"koimoi1st"}>
+        <Card
+          move={"-30px"}
+          title={"Health Factor"}
+          content={"Easily track your loans."}
+        >
           <FourthAnimation />
         </Card>
       </div>

@@ -21,7 +21,7 @@ export default function FourthAnimation() {
           {/* Rotating sun group */}
           <motion.g
             animate={{
-              rotate: [-25, 120, -25],
+              rotate: [-25, 100, -25],
             }}
             transition={{
               duration: 10,

@@ -1,8 +1,11 @@
-const Card = ({ children, content }) => {
+const Card = ({ children, title, content, move = "0px" }) => {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-2 overflow-hidden">
       <div className="self-end">{children}</div>
-      <div className="text-black">{content}</div>
+      <div style={{ transform: `translateY(${move})` }}>
+        <h3 className="text-black font-bold text-2xl">{title}</h3>
+        <p className="text-black text-base">{content}</p>
+      </div>
     </div>
   );
 };

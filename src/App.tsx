@@ -53,6 +53,7 @@ function App() {
       <First />
       <Middle />
       <Features />
+      <div className="h-[800px]">Koi</div>
     </main>
   );
 }

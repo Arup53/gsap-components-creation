@@ -1,12 +1,13 @@
 import FirstCard from "./FirstCard";
 import FourthCard from "./FourthCard";
+import MiniContent from "./MiniContent";
 import SecondCard from "./SecondCard";
 import ThirdCard from "./ThirdCard";
 
 const Features = () => {
   return (
-    <div className="bg-white py-20 h-[1300px]">
-      <div className="w-1/2 mx-auto  grid grid-cols-2 gap-6 h-[1000px]">
+    <div className="bg-white py-20 h-[1600px]">
+      <div className="w-1/2 mx-auto  grid grid-cols-2 gap-6 h-[1300px]">
         <div className="sticky top-[70px] w-[100px] h-[100px]">
           <h3 className="text-black text-[40px] font-bold w-[400px]">
             Why choose aave
@@ -15,11 +16,28 @@ const Features = () => {
             Aave handles tens of billions of dollars across 12+ networks.
           </p>
         </div>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-6">
           <FirstCard />
+          <MiniContent
+            heading={"$56.94B"}
+            content={"Net deposits supplied across 12+ networks."}
+          />
           <SecondCard />
+          <MiniContent heading={"$158.69B"} content={"Volume, past 30 days."} />
           <ThirdCard />
+          <MiniContent
+            heading={"4.80%"}
+            content={
+              "Average stablecoin supply APY Ethereum network, past year."
+            }
+          />
           <FourthCard />
+          <MiniContent
+            heading={"7.66%"}
+            content={
+              "Average stablecoin borrow APR Ethereum network, past year."
+            }
+          />
         </div>
       </div>
     </div>

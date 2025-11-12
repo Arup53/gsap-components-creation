@@ -1,4 +1,11 @@
-const Card = ({ children, title, content, move = "0px" }) => {
+interface CardProps {
+  children?: React.ReactNode;
+  title: string;
+  content: string;
+  move?: string | number;
+}
+
+const Card = ({ children, title, content, move = "0px" }: CardProps) => {
   return (
     <div className="flex flex-col gap-2 overflow-hidden">
       <div className="self-end">{children}</div>

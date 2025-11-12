@@ -1,4 +1,9 @@
-const MiniContent = ({ heading, content }) => {
+interface MiniContent {
+  heading: string;
+  content: string;
+}
+
+const MiniContent = ({ heading, content }: MiniContent) => {
   return (
     <div className="flex items-center mb-12 gap-12">
       <h3 className="text-2xl text-black font-bold">{heading}</h3>

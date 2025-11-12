@@ -1,4 +1,6 @@
 import FirstAnimation from "./animatedObjects/FirstAnimation";
+import SecondAnimation from "./animatedObjects/SecondAnimation";
+import ThirdAnimation from "./animatedObjects/ThirdAnimation";
 import Card from "./Card";
 
 const LastAd = () => {
@@ -8,6 +10,13 @@ const LastAd = () => {
         {/* 1st row */}
         <Card content={"koimoi1st"}>
           <FirstAnimation />
+        </Card>
+        <Card content={"koimoi1st"}>
+          <SecondAnimation />
+        </Card>
+        {/* 2nd row */}
+        <Card content={"koimoi1st"}>
+          <ThirdAnimation />
         </Card>
       </div>
     </div>

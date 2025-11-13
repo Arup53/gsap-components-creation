@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import AnimatedCircles from "./AnimatedCircles";
 import { LiaArrowRightSolid } from "react-icons/lia";
 
-const First = () => {
+const HeroCEX = () => {
   return (
     <div className=" bg-white h-[100vh] py-20">
       <div className="w-[985px] mx-auto text-black space-y-6">
@@ -43,4 +43,4 @@ const First = () => {
   );
 };
 
-export default First;
+export default HeroCEX;

@@ -2,12 +2,13 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-import First from "./components/CEX/Hero/First";
+import First from "./components/CEX/Hero/HeroCEX";
 import Middle from "./components/CEX/middleAd/Middle";
 import Features from "./components/CEX/Features/Features";
 import LastAd from "./components/CEX/LastAd/LastAd";
 import Faq from "./components/CEX/FAQ/Faq";
 import Footer from "./components/CEX/Footer/Footer";
+import HeroCEX from "./components/CEX/Hero/HeroCEX";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -34,7 +35,7 @@ function App() {
       <Ad />
       <Newsletter />
       <Footer /> */}
-      <First />
+      <HeroCEX />
       <Middle />
       <Features />
       <LastAd />

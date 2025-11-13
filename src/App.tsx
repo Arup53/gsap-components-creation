@@ -6,6 +6,7 @@ import First from "./components/CEX/Hero/First";
 import Middle from "./components/CEX/middleAd/Middle";
 import Features from "./components/CEX/Features/Features";
 import LastAd from "./components/CEX/LastAd/LastAd";
+import Faq from "./components/CEX/FAQ/Faq";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -36,6 +37,7 @@ function App() {
       <Middle />
       <Features />
       <LastAd />
+      <Faq />
     </main>
   );
 }

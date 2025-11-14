@@ -2,10 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, ArrowRight } from "lucide-react";
 
+interface FAQS {
+  question: string;
+  answer: string;
+}
+
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqs = [
+  const faqs: FAQS[] = [
     {
       question: "What is Aave?",
       answer:

@@ -10,6 +10,7 @@ import Faq from "./components/CEX/FAQ/Faq";
 import Footer from "./components/CEX/Footer/Footer";
 import HeroCEX from "./components/CEX/Hero/HeroCEX";
 import Navbar from "./components/CEX/Navbar/Navbar";
+import HeroOpal from "./components/opal/HeroOpal";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -37,6 +38,7 @@ function App() {
       <Newsletter />
       <Footer /> */}
       <Navbar />
+      <HeroOpal />
       <HeroCEX />
       <Middle />
       <Features />

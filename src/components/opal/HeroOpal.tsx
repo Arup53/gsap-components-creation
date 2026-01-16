@@ -21,7 +21,7 @@ const HeroOpal = () => {
   };
 
   return (
-    <div className="flex justify-center h-[100vh] gap-12">
+    <div className="flex justify-center h-[100vh] gap-12  py-4">
       {/* VIDEO */}
       <div
         className="py-12 cursor-pointer video-tilt  phone-wrapper"
